@@ -1,6 +1,7 @@
 @use "../../abstracts/vars";
 @use "../../abstracts/colors";
 @use "../../abstracts/mixins";
+@use "../../abstracts/animations";
 
 
 .banky {
@@ -11,6 +12,7 @@
     padding: 4rem;
     max-width: 150rem;
     margin: 0 auto;
+    animation-delay:0.8s;
 
 
 
@@ -43,6 +45,10 @@
     &__money {
         font-weight: 400;
         font-size: 250%;
+
+        &--blur{
+            @include mixins.blur;
+        }
     }
 
 
@@ -86,6 +92,11 @@
         gap: 2rem;
         height: 50rem;
         overflow-y: scroll;
+
+
+        &--blur{
+            @include mixins.blur;   
+        }
     }
 
     &__transaction {
@@ -137,6 +148,7 @@
         align-items: center;
         gap: 4rem;
         justify-content: center;
+        @include animations.popupMixin;
     }
 
     &__switchAccount,
@@ -157,6 +169,10 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+
+    &:hover{
+        cursor:pointer;
     }
 
     &__nameOfaccount {

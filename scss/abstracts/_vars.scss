@@ -1,12 +1,12 @@
 @use "../abstracts/colors";
 
 $vhCalc: (
-   "heightOfHeader": 8rem,
+   "heightOfHeader": 10rem,
    "paddingOfBody": 4rem,
 );
 
 
-$box-shadow : 0 1rem 1rem 0 rgba(0,0,0,0.2);
+$box-shadow : 0 0.2rem 1rem 0 rgba(0,0,0,0.2);
 
 $font-family: 'Open Sans', sans-serif;
 
