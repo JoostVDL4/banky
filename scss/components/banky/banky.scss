@@ -106,6 +106,7 @@
         justify-content: space-between;
         position: relative;
         padding-bottom: 0.5rem;
+        @include animations.popupMixin;
 
         &::after {
            @include mixins.afterStyle;

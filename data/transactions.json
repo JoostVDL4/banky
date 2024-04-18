@@ -24,11 +24,13 @@
     "ZZP-Rekening": [
         {
             "from/to": "bedrijf x",
-            "amount": 100
+            "amount": 100,
+            "logo": ""
         },
         {
             "from/to": "bedrijf y",
-            "amount": -5000
+            "amount": -5000,
+            "logo": ""
         }
     ]
 }
